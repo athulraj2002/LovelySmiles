@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
 
-    tools:context="com.example.raju.lovelysmiles.Test">
+    tools:context="com.example.raju.lovelysmiles.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/background_blue"
-        android:backgroundTint="@color/colorAccent"
+
         android:backgroundTintMode="src_atop"
 
 
@@ -34,7 +34,7 @@
                 android:layout_marginTop="40dp"
                 android:fontFamily="sans-serif"
                 android:gravity="center_vertical|center_horizontal"
-                android:text="@string/lovely_smiles"
+                android:text="@string/app_name"
 
 
                 android:textColor="@color/colorAccent"
