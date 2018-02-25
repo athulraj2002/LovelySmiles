@@ -56,7 +56,6 @@
                         android:background="#00ffffff"
                         android:textColor="#ffffff"
                         android:textSize="20sp"
-
                         android:text="Register" />
                 </LinearLayout>
             </LinearLayout>
