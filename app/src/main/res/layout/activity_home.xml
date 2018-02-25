@@ -53,7 +53,7 @@
                         android:id="@+id/button"
                         android:layout_width="300dp"
                         android:layout_height="50dp"
-
+                        android:background="#00ffffff"
                         android:textColor="#ffffff"
                         android:textSize="20sp"
 
