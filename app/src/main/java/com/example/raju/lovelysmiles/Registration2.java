@@ -2,6 +2,8 @@ package com.example.raju.lovelysmiles;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,7 +19,7 @@ public class Registration2 extends AppCompatActivity {
      public TextView pdate;
      Calendar myCalendar;
      ImageButton r2bw;
-
+        TextView t1,t2,t3,t4,t5,t6;
     DatePickerDialog.OnDateSetListener date;
     private void updateLabel() {
         String myFormat = "dd/MM/yy"; //In which you need put here
@@ -25,11 +27,79 @@ public class Registration2 extends AppCompatActivity {
 
         pdate.setText(sdf.format(myCalendar.getTime()));
     }
+    private void timeselect(){
+        t1.setTextColor(Color.parseColor("#3e89d9"));
+        t1.setBackground(getDrawable(R.drawable.border1));
+        t2.setTextColor(Color.parseColor("#3e89d9"));
+        t2.setBackground(getDrawable(R.drawable.border1));
+        t3.setTextColor(Color.parseColor("#3e89d9"));
+        t3.setBackground(getDrawable(R.drawable.border1));
+        t4.setTextColor(Color.parseColor("#3e89d9"));
+        t4.setBackground(getDrawable(R.drawable.border1));
+        t5.setTextColor(Color.parseColor("#3e89d9"));
+        t5.setBackground(getDrawable(R.drawable.border1));
+        t6.setTextColor(Color.parseColor("#3e89d9"));
+        t6.setBackground(getDrawable(R.drawable.border1));
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration2);
 
+        t1=(TextView)findViewById(R.id.time1);
+        t2=(TextView)findViewById(R.id.time2);
+        t3=(TextView)findViewById(R.id.time3);
+        t4=(TextView)findViewById(R.id.time4);
+        t5=(TextView)findViewById(R.id.time5);
+        t6=(TextView)findViewById(R.id.time6);
+        t1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                timeselect();
+                t1.setTextColor(Color.parseColor("#ffffff"));
+                t1.setBackground(getDrawable(R.drawable.border2));
+            }
+        });
+        t2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                timeselect();
+                t2.setTextColor(Color.parseColor("#ffffff"));
+                t2.setBackground(getDrawable(R.drawable.border2));
+            }
+        });
+        t3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                timeselect();
+                t3.setTextColor(Color.parseColor("#ffffff"));
+                t3.setBackground(getDrawable(R.drawable.border2));
+            }
+        });
+        t4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                timeselect();
+                t4.setTextColor(Color.parseColor("#ffffff"));
+                t4.setBackground(getDrawable(R.drawable.border2));
+            }
+        });
+        t5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                timeselect();
+                t5.setTextColor(Color.parseColor("#ffffff"));
+                t5.setBackground(getDrawable(R.drawable.border2));
+            }
+        });
+        t6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                timeselect();
+                t6.setTextColor(Color.parseColor("#ffffff"));
+                t6.setBackground(getDrawable(R.drawable.border2));
+            }
+        });
         r2bw=(ImageButton)findViewById(R.id.r2bw);
         r2bw.setOnClickListener(new View.OnClickListener() {
             @Override
