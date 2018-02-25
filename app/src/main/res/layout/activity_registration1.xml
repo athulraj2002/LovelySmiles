@@ -41,7 +41,7 @@
 
 
                         <ImageButton
-                            android:id="@+id/imageButton2"
+                            android:id="@+id/r1finish"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="#00ffffff"
@@ -73,7 +73,7 @@
                         android:orientation="vertical">
 
                         <ImageButton
-                            android:id="@+id/imageButton3"
+                            android:id="@+id/r1next"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="#00ffffff"
@@ -104,8 +104,11 @@
                     style="@android:style/Widget.Material.SeekBar.Discrete"
                     android:layout_width="362dp"
                     android:layout_height="52dp"
+
                     android:max="3"
-                    android:progress="0" />
+                    android:progress="1" />
+
+
 
             </LinearLayout>
 
@@ -113,6 +116,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -134,6 +138,7 @@
                             android:orientation="vertical">
 
                             <LinearLayout
+                                android:id="@+id/pack1"
                                 android:layout_width="172dp"
                                 android:layout_height="223dp"
                                 android:background="@drawable/border1"
@@ -181,6 +186,7 @@
                             android:orientation="vertical">
 
                             <LinearLayout
+                                android:id="@+id/pack2"
                                 android:layout_width="172dp"
                                 android:layout_height="223dp"
                                 android:background="@drawable/border1"
@@ -243,6 +249,7 @@
                             android:orientation="vertical">
 
                             <LinearLayout
+                                android:id="@+id/pack3"
                                 android:layout_width="172dp"
                                 android:layout_height="223dp"
                                 android:background="@drawable/border1"
@@ -290,6 +297,7 @@
                             android:orientation="vertical">
 
                             <LinearLayout
+                                android:id="@+id/pack4"
                                 android:layout_width="172dp"
                                 android:layout_height="223dp"
                                 android:background="@drawable/border1"
@@ -329,8 +337,11 @@
                             </LinearLayout>
 
                         </LinearLayout>
+
                     </LinearLayout>
+
                 </LinearLayout>
+
             </LinearLayout>
 
         </LinearLayout>

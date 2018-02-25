@@ -20,20 +20,39 @@
             android:backgroundTint="#ffffff"
             android:backgroundTintMode="multiply"
             android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="354dp"
+
                 android:layout_margin="20dp"
                 android:fontFeatureSettings=""
                 android:gravity="center_vertical|center_horizontal"
                 android:padding="10dp"
                 android:text="Are you sick of having yellow teeth
 ?"
-                android:textColor="#ffffff"
+                android:textColor="@color/lightblue"
 
-                android:textSize="50sp" />
+                android:textSize="31.2sp" />
+                <TextView
+                    android:id="@+id/textView3fr"
+                    android:layout_width="match_parent"
+                    android:layout_height="354dp"
+
+                    android:layout_margin="20dp"
+                    android:fontFeatureSettings=""
+                    android:gravity="center_vertical|center_horizontal"
+                    android:padding="10dp"
+                    android:text="Are you sick of having yellow teeth
+?"
+                    android:textColor="#ffffff"
+
+                    android:textSize="30sp" />
+            </FrameLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -50,11 +69,11 @@
                     android:orientation="vertical">
 
                     <Button
-                        android:id="@+id/button"
+                        android:id="@+id/button_home"
                         android:layout_width="300dp"
                         android:layout_height="50dp"
                         android:background="#00ffffff"
-                        android:textColor="#ffffff"
+                        android:textColor="#55a1f2"
                         android:textSize="20sp"
                         android:text="Register" />
                 </LinearLayout>
