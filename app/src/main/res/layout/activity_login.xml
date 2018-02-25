@@ -12,7 +12,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background_blue"
+        android:background="@drawable/bluebg"
         android:orientation="vertical">
 
         <LinearLayout
@@ -124,7 +124,7 @@
                 android:paddingLeft="20dp"
                 android:paddingTop="10dp"
                 android:text="New User?"
-                android:textColor="#fff"
+                android:textColor="#640000"
                 android:textSize="15sp" />
         </LinearLayout>
     </LinearLayout>
