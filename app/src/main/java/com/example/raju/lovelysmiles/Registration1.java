@@ -14,10 +14,11 @@ public class Registration1 extends AppCompatActivity {
     public ImageButton bw,fw;
     Intent r1int;
     private void packselect(){
-        p1.setBackgroundColor(Color.parseColor("#00ffffff"));
-        p2.setBackgroundColor(Color.parseColor("#00ffffff"));
-        p3.setBackgroundColor(Color.parseColor("#00ffffff"));
-        p4.setBackgroundColor(Color.parseColor("#00ffffff"));
+        p1.setBackground(getDrawable(R.drawable.border1));
+        p2.setBackground(getDrawable(R.drawable.border1));
+        p3.setBackground(getDrawable(R.drawable.border1));
+        p4.setBackground(getDrawable(R.drawable.border1));
+
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +50,7 @@ public class Registration1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 packselect();
-                p1.setBackgroundColor(Color.parseColor("#ffffff"));
+                p1.setBackground(getDrawable(R.drawable.border3));
 
             }
         });
@@ -57,14 +58,14 @@ public class Registration1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 packselect();
-                p2.setBackgroundColor(Color.parseColor("#ffffff"));
+                p2.setBackground(getDrawable(R.drawable.border3));
             }
         });
         p3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 packselect();
-                p3.setBackgroundColor(Color.parseColor("#ffffff"));
+                p3.setBackground(getDrawable(R.drawable.border3));
 
             }
         });
@@ -72,8 +73,7 @@ public class Registration1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 packselect();
-                p4.setBackgroundColor(Color.parseColor("#ffffff"));
-
+                p4.setBackground(getDrawable(R.drawable.border3));
             }
         });
     }
