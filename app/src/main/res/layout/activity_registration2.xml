@@ -100,7 +100,9 @@
                         android:id="@+id/seekBar5"
                         style="@android:style/Widget.Material.SeekBar.Discrete"
                         android:layout_width="362dp"
+
                         android:layout_height="52dp"
+                        android:thumb="@drawable/custom_thumb"
                         android:max="3"
                         android:progress="1" />
 
