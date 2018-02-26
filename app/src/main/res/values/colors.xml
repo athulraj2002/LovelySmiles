@@ -4,5 +4,6 @@
     <color name="colorPrimaryDark">#2196F3</color>
     <color name="colorAccent">#38fdfdfd</color>
     <color name="white">#ffffff</color>
-    <color name="lightblue">#3e89d9</color>
+    <color name="tint">#87ffffff</color>
+    <color name="lightblue">#d04b97e8</color>
 </resources>

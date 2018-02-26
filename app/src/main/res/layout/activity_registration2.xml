@@ -10,7 +10,10 @@
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bluebg"
+        android:background="@drawable/background1"
+        android:backgroundTint="@color/tint"
+
+        android:backgroundTintMode="src_over"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
@@ -102,9 +105,9 @@
                         android:layout_width="362dp"
 
                         android:layout_height="52dp"
-                        android:thumb="@drawable/custom_thumb"
                         android:max="3"
-                        android:progress="1" />
+                        android:progress="1"
+                        android:thumb="@drawable/custom_thumb" />
 
                 </LinearLayout>
 
@@ -130,12 +133,12 @@
                     android:layout_height="60dp"
                     android:background="@drawable/border2"
                     android:ems="10"
-                    android:paddingTop="10dp"
-                    android:textSize="25dp"
                     android:inputType="date"
                     android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
                     android:text="Choose Date"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textSize="25dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -196,9 +199,9 @@
                                         android:id="@+id/time1"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
+                                        android:background="@drawable/border2"
                                         android:gravity="center"
                                         android:text="9:00 am"
-                                        android:background="@drawable/border2"
                                         android:textColor="@color/white"
                                         android:textSize="20sp" />
                                 </LinearLayout>
@@ -221,9 +224,9 @@
                                         android:id="@+id/time2"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
+                                        android:background="@drawable/border1"
                                         android:gravity="center"
                                         android:text="10:00 am"
-                                        android:background="@drawable/border1"
                                         android:textColor="@color/lightblue"
                                         android:textSize="20sp" />
                                 </LinearLayout>
@@ -259,8 +262,8 @@
                                         android:id="@+id/time3"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:gravity="center"
                                         android:background="@drawable/border1"
+                                        android:gravity="center"
                                         android:text="11:00 am"
                                         android:textColor="@color/lightblue"
                                         android:textSize="20sp" />
@@ -285,9 +288,9 @@
                                         android:id="@+id/time4"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
+                                        android:background="@drawable/border1"
                                         android:gravity="center"
                                         android:text="12:00 pm"
-                                        android:background="@drawable/border1"
                                         android:textColor="@color/lightblue"
                                         android:textSize="20sp" />
                                 </LinearLayout>
@@ -324,8 +327,8 @@
                                         android:id="@+id/time5"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:gravity="center"
                                         android:background="@drawable/border1"
+                                        android:gravity="center"
                                         android:text="1:00 pm"
                                         android:textColor="@color/lightblue"
                                         android:textSize="20sp" />
@@ -350,8 +353,8 @@
                                         android:id="@+id/time6"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:gravity="center"
                                         android:background="@drawable/border1"
+                                        android:gravity="center"
                                         android:text="2:00 pm"
                                         android:textColor="@color/lightblue"
                                         android:textSize="20sp" />
