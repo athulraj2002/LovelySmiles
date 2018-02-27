@@ -22,13 +22,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Registration1" />
+        <activity android:name=".Registration1" android:theme="@style/AppTheme.NoActionbar"/>
         <activity
             android:name=".Signup"
-            android:theme="@style/AppTheme" />
-        <activity android:name=".Registration2" />
-        <activity android:name=".registration3" />
-        <activity android:name=".payment"></activity>
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity android:name=".Registration2" android:theme="@style/AppTheme.NoActionbar" />
+        <activity android:name=".registration3" android:theme="@style/AppTheme.NoActionbar"/>
+        <activity android:name=".payment" android:theme="@style/AppTheme.NoActionbar"></activity>
     </application>
 
 </manifest>
