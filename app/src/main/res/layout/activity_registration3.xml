@@ -14,7 +14,9 @@
 
         android:backgroundTintMode="src_over"
 
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -41,7 +43,7 @@
 
 
                         <ImageButton
-                            android:id="@+id/r1finish"
+                            android:id="@+id/r3bw"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="#00ffffff"
@@ -73,7 +75,7 @@
                         android:orientation="vertical">
 
                         <ImageButton
-                            android:id="@+id/r1next"
+                            android:id="@+id/r3fw"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="#00ffffff"
@@ -133,23 +135,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="horizontal">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
                             android:layout_weight="1"
                             android:gravity="center"
                             android:orientation="vertical">
@@ -162,11 +147,12 @@
                                 android:paddingLeft="20dp"
                                 android:text="Sreekariyam"
                                 android:textSize="18sp" />
+
                             <TextView
                                 android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
                                 android:paddingLeft="22dp"
-                                android:text="0km"
-                                android:layout_height="wrap_content" />
+                                android:text="0km" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -210,9 +196,9 @@
 
                             <TextView
                                 android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
                                 android:paddingLeft="22dp"
-                                android:text="9km"
-                                android:layout_height="wrap_content" />
+                                android:text="9km" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -256,9 +242,9 @@
 
                             <TextView
                                 android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
                                 android:paddingLeft="22dp"
-                                android:text="12km"
-                                android:layout_height="wrap_content" />
+                                android:text="12km" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -293,18 +279,18 @@
 
                             <TextView
                                 android:id="@+id/textView12"
-                                android:paddingLeft="20dp"
-                                android:textSize="18sp"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center_vertical"
-                                android:text="East Fort" />
+                                android:paddingLeft="20dp"
+                                android:text="East Fort"
+                                android:textSize="18sp" />
 
                             <TextView
                                 android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
                                 android:paddingLeft="22dp"
-                                android:text="15km"
-                                android:layout_height="wrap_content" />
+                                android:text="15km" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -337,7 +323,7 @@
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/button4"
+                                android:id="@+id/buttton_pay"
                                 android:layout_width="246dp"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/border3"

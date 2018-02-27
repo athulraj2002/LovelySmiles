@@ -75,7 +75,7 @@
                         android:orientation="vertical">
 
                         <ImageButton
-                            android:id="@+id/imageButton3"
+                            android:id="@+id/r2fw"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="#00ffffff"

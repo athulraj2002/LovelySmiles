@@ -18,7 +18,8 @@ import java.util.Locale;
 public class Registration2 extends AppCompatActivity {
      public TextView pdate;
      Calendar myCalendar;
-     ImageButton r2bw;
+     Intent r2next;
+     ImageButton r2bw,r2fw;
         TextView t1,t2,t3,t4,t5,t6;
     DatePickerDialog.OnDateSetListener date;
     private void updateLabel() {
@@ -98,6 +99,14 @@ public class Registration2 extends AppCompatActivity {
                 timeselect();
                 t6.setTextColor(Color.parseColor("#ffffff"));
                 t6.setBackground(getDrawable(R.drawable.border2));
+            }
+        });
+        r2next=new Intent(Registration2.this,registration3.class);
+        r2fw=(ImageButton)findViewById(R.id.r2fw);
+        r2fw.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(r2next);
             }
         });
         r2bw=(ImageButton)findViewById(R.id.r2bw);
