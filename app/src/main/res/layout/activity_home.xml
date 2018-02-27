@@ -5,11 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.raju.lovelysmiles.Home">
-
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_gravity="center"
         android:layout_height="match_parent"
+        android:layout_gravity="center"
         android:background="@drawable/background1"
         android:backgroundTint="@color/tint"
 
@@ -23,63 +25,269 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="121dp"
+                android:layout_height="254dp"
                 android:layout_gravity="center_vertical|center_horizontal|center"
                 android:layout_weight="1"
-
+                android:background="#cededede"
                 android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/imageView7"
-                    android:layout_width="133dp"
-                    android:layout_height="256dp"
-                    android:layout_gravity="center"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    app:srcCompat="@drawable/avatar" />
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="174dp"
+                            android:layout_height="203dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/avatar_24px" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#00ffffff"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="John"
+                            android:textSize="35sp" />
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Age :  22yrs"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Trivandrum"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Ph : 949494xxxx"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="261dp"
+                android:layout_height="163dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:layout_weight="2"
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView14"
+                    android:id="@+id/textView22"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:padding="10dp"
-                    android:text="Name"
-                    android:textSize="35sp" />
 
-                <TextView
-                    android:id="@+id/textView15"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:padding="10dp"
-                    android:text="Age"
-                    android:textSize="35sp" />
+                    android:gravity="center_horizontal"
+                    android:padding="15dp"
+                    android:text="Packages"
+                    android:textSize="24sp" />
 
-                <TextView
-                    android:id="@+id/textView15"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:padding="10dp"
-                    android:text="Location"
-                    android:textSize="35sp" />
+                    android:background="@drawable/border5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border5"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView23"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="Package 1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/imageButton6"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#00ffffff"
+                                app:srcCompat="@drawable/minus_24px" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:scrollHorizontally="false"
+                            android:text="Description
+                                            blah blah blah
+                                            blah blah blah" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView23"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="Package 2" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/imageButton7"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#00ffffff"
+                                app:srcCompat="@drawable/plus_24px" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView23"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="Package 3" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/imageButton7"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#00ffffff"
+                                app:srcCompat="@drawable/plus_24px" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -92,7 +300,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:orientation="vertical"></LinearLayout>
+                        android:orientation="vertical">
+
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -103,13 +313,14 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
                             android:orientation="vertical">
 
                             <ImageButton
 
                                 android:id="@+id/imageButton4"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="65dp"
                                 android:background="#00ffffff"
                                 app:srcCompat="@drawable/ic_add_circle_black_24px" />
 
@@ -118,7 +329,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="New" />
+                                android:text="Book now" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -127,12 +338,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:gravity="center_horizontal"
                         android:orientation="vertical">
 
                         <ImageButton
                             android:id="@+id/imageButton5"
-                            android:layout_width="match_parent"
-                            android:layout_height="75dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="64dp"
                             android:background="#00ffffff"
                             app:srcCompat="@drawable/ic_storage_black_24px" />
 
@@ -141,7 +353,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="History" />
+                            android:text="Overview" />
                     </LinearLayout>
 
                     <LinearLayout
