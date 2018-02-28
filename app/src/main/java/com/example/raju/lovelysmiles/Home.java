@@ -10,11 +10,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class Home extends AppCompatActivity {
-   public ImageView hmbtn;
+   public Button hmbtn;
     public Intent hmint;
-    LinearLayout pll1,pll2,pll3;
-    ImageButton p1,p2,p3;
-    private void allgone(){
+   // LinearLayout pll1,pll2,pll3;
+    //ImageButton p1,p2,p3;
+   /* private void allgone(){
         pll1.setVisibility(LinearLayout.GONE);
         pll2.setVisibility(LinearLayout.GONE);
         pll2.setVisibility(LinearLayout.GONE);
@@ -23,13 +23,13 @@ public class Home extends AppCompatActivity {
         p2.setBackgroundResource(R.drawable.plus_24px);
         p3.setBackgroundResource(R.drawable.plus_24px);
 
-    }
+    }*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        pll1=(LinearLayout)findViewById(R.id.pll1);
+       /* pll1=(LinearLayout)findViewById(R.id.pll1);
         pll2=(LinearLayout)findViewById(R.id.pll2);
         pll3=(LinearLayout)findViewById(R.id.pll3);
 
@@ -69,10 +69,10 @@ public class Home extends AppCompatActivity {
                 p3.setBackgroundResource(R.drawable.minus_24px);
                 pll3.setVisibility(View.VISIBLE);
             }
-        });
+        }); */
 
       hmint=new Intent(Home.this,Registration1.class);
-        hmbtn=(ImageView) findViewById(R.id.subbtn);
+        hmbtn=(Button) findViewById(R.id.homebtn);
        hmbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

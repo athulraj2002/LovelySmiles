@@ -1,19 +1,23 @@
 package com.example.raju.lovelysmiles;
 
 import android.content.Intent;
+import android.support.v4.content.IntentCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class payment extends AppCompatActivity {
     LinearLayout ll1,ll2,ll3,ll4;
     ImageButton pbw;
+    Button btn_done;
     Intent canint;
     TextView cancel;
-    private void noselect(){
+   private void noselect(){
         ll1.setBackground(getDrawable(R.drawable.noselect));
         ll2.setBackground(getDrawable(R.drawable.noselect));
         ll3.setBackground(getDrawable(R.drawable.noselect));
@@ -24,7 +28,15 @@ public class payment extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
-
+        btn_done=(Button)findViewById(R.id.btn_done);
+        btn_done.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                canint.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                Toast.makeText(payment.this, "Successfully Booked!!", Toast.LENGTH_SHORT).show();
+                startActivity(canint);
+            }
+        });
         canint=new Intent(payment.this,Home.class);
         pbw=(ImageButton)findViewById(R.id.pbw);
         pbw.setOnClickListener(new View.OnClickListener() {
@@ -37,7 +49,8 @@ public class payment extends AppCompatActivity {
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
+
+                canint.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(canint);
             }
         });

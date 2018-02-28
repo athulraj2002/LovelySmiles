@@ -18,13 +18,11 @@
 
 
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -114,221 +112,110 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_weight="2"
-                    android:gravity="center_horizontal"
+                    android:layout_height="365dp"
+                    android:layout_weight="1"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView22"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="LovelySmiles Packages"
+                        android:textSize="30dp" />
 
-                        android:gravity="center_horizontal"
-                        android:padding="15dp"
-                        android:text="Packages"
-                        android:textSize="24sp" />
-
-                    <LinearLayout
+                    <FrameLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/border5"
-                        android:orientation="vertical">
+                        android:layout_height="match_parent">
 
                         <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/border5"
-                            android:orientation="horizontal">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:id="@+id/textView23"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="3"
-
-                                    android:gravity="center"
-                                    android:padding="10dp"
-                                    android:text="Package 1" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="90dp"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="vertical">
-
-                                <ImageButton
-                                    android:id="@+id/p1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:background="#00ffffff"
-                                    app:srcCompat="@drawable/minus_24px" />
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/pll1"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
-                            <TextView
-                                android:id="@+id/textView27"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:padding="10dp"
-                                android:scrollHorizontally="false"
-                                android:text="Description
-                                            blah blah blah
-                                            blah blah blah" />
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/border5"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/border5"
-                            android:orientation="horizontal">
-
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:orientation="vertical">
+                                android:orientation="horizontal"
+                                android:layout_margin="10dp"
 
-                                <TextView
-                                    android:id="@+id/textView23"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="3"
 
-                                    android:gravity="center"
-                                    android:padding="10dp"
-                                    android:text="Package 2" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="90dp"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="vertical">
-
-                                <ImageButton
-                                    android:id="@+id/p2"
-                                    android:layout_width="match_parent"
+                                >
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
                                     android:layout_height="match_parent"
-                                    android:background="#00ffffff"
-                                    app:srcCompat="@drawable/minus_24px" />
+                                    android:src="@drawable/box"
+                                    android:elevation="10dp"
+                                    android:layout_marginRight="5dp"
+                                    />
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/box"
+                                    />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:layout_margin="10dp"
+                                android:orientation="horizontal"
+                                >
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/box"
+                                    android:layout_marginRight="5dp"
+                                    />
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/box"
+                                    />
+
                             </LinearLayout>
 
                         </LinearLayout>
 
                         <LinearLayout
-                            android:id="@+id/pll2"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="right|bottom"
                             android:orientation="vertical">
 
-                            <TextView
-                                android:id="@+id/textView27"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:padding="10dp"
-                                android:scrollHorizontally="false"
-                                android:text="Description
-                                            blah blah blah
-                                            blah blah blah" />
-                        </LinearLayout>
+                            <ImageButton
 
-                    </LinearLayout>
+                                android:id="@+id/homebtn"
+                                android:layout_width="74dp"
+                                android:layout_height="74dp"
+                                android:layout_marginRight="15dp"
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/border5"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/border5"
-                            android:orientation="horizontal">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:id="@+id/textView23"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="3"
-
-                                    android:gravity="center"
-                                    android:padding="10dp"
-                                    android:text="Package 3" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="90dp"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="vertical">
-
-                                <ImageButton
-                                    android:id="@+id/p3"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:background="#00ffffff"
-                                    app:srcCompat="@drawable/minus_24px" />
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/pll3"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
+                                android:src="@drawable/ic_add_circle_black_24px"
+                                android:background="@drawable/circle" />
 
                             <TextView
-                                android:id="@+id/textView27"
-                                android:layout_width="match_parent"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:padding="10dp"
-                                android:scrollHorizontally="false"
-                                android:text="Description
-                                            blah blah blah
-                                            blah blah blah" />
+                                android:layout_marginRight="8dp"
+                                android:background="@drawable/border2"
+                                android:text=" Book Now "
+                                android:textColor="@color/white"
+                                android:textSize="18dp" />
                         </LinearLayout>
-
-
-                    </LinearLayout>
-
-
+                    </FrameLayout>
                 </LinearLayout>
-
             </LinearLayout>
-        </ScrollView>
+
 
 
 
