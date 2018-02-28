@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class Home extends AppCompatActivity {
-   public Button hmbtn;
+   public ImageButton hmbtn;
     public Intent hmint;
    // LinearLayout pll1,pll2,pll3;
     //ImageButton p1,p2,p3;
@@ -72,7 +72,7 @@ public class Home extends AppCompatActivity {
         }); */
 
       hmint=new Intent(Home.this,Registration1.class);
-        hmbtn=(Button) findViewById(R.id.homebtn);
+        hmbtn=(ImageButton) findViewById(R.id.homebtn);
        hmbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

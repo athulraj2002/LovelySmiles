@@ -157,6 +157,8 @@
                                         android:text="Notifications"
                                         android:textSize="25dp"
                                         android:inputType="none"
+                                        android:focusable="false"
+                                        android:clickable="false"
                                         />
 
                                     <TextView
