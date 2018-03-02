@@ -54,7 +54,7 @@ public class Registration1 extends AppCompatActivity {
                 startActivity(r1int);
             }
         });
-        p1.setBackground(getDrawable(R.drawable.border_pack));
+        p1.setBackground(getDrawable(R.drawable.border3));
 
         p1.setOnClickListener(new View.OnClickListener() {
             @Override
