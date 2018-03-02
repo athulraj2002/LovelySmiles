@@ -66,17 +66,17 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/textView18"
+                                android:id="@+id/hname"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:gravity="center"
                                 android:padding="10dp"
                                 android:text="John"
-                                android:textSize="35sp" />
+                                android:textSize="25sp" />
 
                             <TextView
-                                android:id="@+id/textView19"
+                                android:id="@+id/hage"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
@@ -86,7 +86,7 @@
                                 android:textSize="18sp" />
 
                             <TextView
-                                android:id="@+id/textView20"
+                                android:id="@+id/hlocation"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
@@ -96,7 +96,7 @@
                                 android:textSize="18sp" />
 
                             <TextView
-                                android:id="@+id/textView21"
+                                android:id="@+id/hcontact"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
@@ -161,26 +161,31 @@
                                         android:clickable="false"
                                         />
 
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="  Teeth Whitening"
-                                        android:layout_marginLeft="20dp"
-                                        android:layout_marginTop="30dp"
-                                        android:textSize="20dp" />
                                         <TextView
+                                            android:id="@+id/topic"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginTop="30dp"
+                                            android:text="  Teeth Whitening"
+                                            android:textSize="20dp" />
+
+                                        <TextView
+                                            android:id="@+id/hdatetime"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginTop="30dp"
                                             android:text="  13-03-2018      10:00 am"
-                                            android:layout_marginLeft="20dp"
-                                            android:layout_marginTop="30dp"
                                             android:textSize="17dp" />
+
                                         <TextView
+                                            android:id="@+id/hclinic"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
-                                            android:text="  EastFort Clinic"
                                             android:layout_marginLeft="20dp"
                                             android:layout_marginTop="30dp"
+                                            android:text="  EastFort Clinic"
                                             android:textSize="17dp" />
                                     </LinearLayout>
 

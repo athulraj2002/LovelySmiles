@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class Registration1 extends AppCompatActivity {
-    public LinearLayout p1,p2,p3,p4;
+    public LinearLayout p1,p2,p3,p4,t1,t2,t3,t4;
     public ImageButton bw,fw;
     Intent r1int;
     private void packselect(){
@@ -19,6 +19,10 @@ public class Registration1 extends AppCompatActivity {
         p3.setBackground(getDrawable(R.drawable.border1));
         p4.setBackground(getDrawable(R.drawable.border1));
 
+        t1.setBackground(getDrawable(R.drawable.empty));
+        t2.setBackground(getDrawable(R.drawable.empty));
+        t3.setBackground(getDrawable(R.drawable.empty));
+        t4.setBackground(getDrawable(R.drawable.empty));
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +37,11 @@ public class Registration1 extends AppCompatActivity {
         p3=(LinearLayout)findViewById(R.id.pack3);
         p4=(LinearLayout)findViewById(R.id.pack4);
 
+        t1=findViewById(R.id.tick1);
+        t2=findViewById(R.id.tick2);
+        t3=findViewById(R.id.tick3);
+        t4=findViewById(R.id.tick4);
+
         bw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,12 +54,14 @@ public class Registration1 extends AppCompatActivity {
                 startActivity(r1int);
             }
         });
+        p1.setBackground(getDrawable(R.drawable.border_pack));
 
         p1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 packselect();
                 p1.setBackground(getDrawable(R.drawable.border3));
+                t1.setBackground(getDrawable(R.drawable.tick));
 
             }
         });
@@ -59,6 +70,7 @@ public class Registration1 extends AppCompatActivity {
             public void onClick(View view) {
                 packselect();
                 p2.setBackground(getDrawable(R.drawable.border3));
+                t2.setBackground(getDrawable(R.drawable.tick));
             }
         });
         p3.setOnClickListener(new View.OnClickListener() {
@@ -66,6 +78,7 @@ public class Registration1 extends AppCompatActivity {
             public void onClick(View view) {
                 packselect();
                 p3.setBackground(getDrawable(R.drawable.border3));
+                t3.setBackground(getDrawable(R.drawable.tick));
 
             }
         });
@@ -74,6 +87,7 @@ public class Registration1 extends AppCompatActivity {
             public void onClick(View view) {
                 packselect();
                 p4.setBackground(getDrawable(R.drawable.border3));
+                t4.setBackground(getDrawable(R.drawable.tick));
             }
         });
     }

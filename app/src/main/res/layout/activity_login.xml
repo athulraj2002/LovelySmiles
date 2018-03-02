@@ -59,7 +59,7 @@
                         android:orientation="vertical">
 
                         <EditText
-                            android:id="@+id/editText"
+                            android:id="@+id/luname"
                             android:layout_width="238dp"
                             android:layout_height="wrap_content"
                             android:ems="10"
@@ -74,7 +74,7 @@
                         android:orientation="vertical">
 
                         <EditText
-                            android:id="@+id/editText3"
+                            android:id="@+id/lpass"
                             android:layout_width="238dp"
                             android:layout_height="wrap_content"
                             android:ems="10"

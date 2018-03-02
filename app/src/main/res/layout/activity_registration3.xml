@@ -135,7 +135,7 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/textView12"
+                                android:id="@+id/loc1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center_vertical"
@@ -182,7 +182,7 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/textView12"
+                                android:id="@+id/loc2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center_vertical"
@@ -229,7 +229,7 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/textView12"
+                                android:id="@+id/loc3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center_vertical"
@@ -276,7 +276,7 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/textView12"
+                                android:id="@+id/loc4"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center_vertical"

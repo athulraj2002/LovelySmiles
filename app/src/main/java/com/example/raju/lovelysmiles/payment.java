@@ -1,6 +1,7 @@
 package com.example.raju.lovelysmiles;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v4.content.IntentCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,6 +17,9 @@ public class payment extends AppCompatActivity {
     ImageButton pbw;
     Button btn_done;
     Intent canint;
+    SharedPreferences settings;
+    SharedPreferences.Editor editor;
+    String date,time,location;
     TextView cancel;
    private void noselect(){
         ll1.setBackground(getDrawable(R.drawable.noselect));
@@ -29,10 +33,21 @@ public class payment extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
         btn_done=(Button)findViewById(R.id.btn_done);
+        settings=getSharedPreferences("settings",0);
+        editor=settings.edit();
+        Bundle bundle=getIntent().getExtras();
+        date=bundle.getString("date");
+        time=bundle.getString("time");
+        location=bundle.getString("location");
         btn_done.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 canint.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                editor.putString("booked","yes");
+                editor.putString("date",date);
+                editor.putString("time",time);
+                editor.putString("clinic",location);
+                editor.commit();
                 Toast.makeText(payment.this, "Successfully Booked!!", Toast.LENGTH_SHORT).show();
                 startActivity(canint);
             }

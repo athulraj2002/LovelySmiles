@@ -20,13 +20,18 @@ public class Registration2 extends AppCompatActivity {
      Calendar myCalendar;
      Intent r2next;
      ImageButton r2bw,r2fw;
+     String time;
         TextView t1,t2,t3,t4,t5,t6;
     DatePickerDialog.OnDateSetListener date;
     private void updateLabel() {
-        String myFormat = "dd/MM/yy"; //In which you need put here
+        String myFormat = "dd-MM-yy"; //In which you need put here
         SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
 
         pdate.setText(sdf.format(myCalendar.getTime()));
+        r2next.putExtra("date",pdate.getText().toString());
+
+
+
     }
     private void timeselect(){
         t1.setTextColor(Color.parseColor("#3e89d9"));
@@ -47,18 +52,21 @@ public class Registration2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration2);
 
+
         t1=(TextView)findViewById(R.id.time1);
         t2=(TextView)findViewById(R.id.time2);
         t3=(TextView)findViewById(R.id.time3);
         t4=(TextView)findViewById(R.id.time4);
         t5=(TextView)findViewById(R.id.time5);
         t6=(TextView)findViewById(R.id.time6);
+        time=t1.getText().toString();
         t1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 timeselect();
                 t1.setTextColor(Color.parseColor("#ffffff"));
                 t1.setBackground(getDrawable(R.drawable.border2));
+                time=t1.getText().toString();
             }
         });
         t2.setOnClickListener(new View.OnClickListener() {
@@ -67,6 +75,7 @@ public class Registration2 extends AppCompatActivity {
                 timeselect();
                 t2.setTextColor(Color.parseColor("#ffffff"));
                 t2.setBackground(getDrawable(R.drawable.border2));
+                time=t2.getText().toString();
             }
         });
         t3.setOnClickListener(new View.OnClickListener() {
@@ -75,6 +84,7 @@ public class Registration2 extends AppCompatActivity {
                 timeselect();
                 t3.setTextColor(Color.parseColor("#ffffff"));
                 t3.setBackground(getDrawable(R.drawable.border2));
+                time=t3.getText().toString();
             }
         });
         t4.setOnClickListener(new View.OnClickListener() {
@@ -83,6 +93,7 @@ public class Registration2 extends AppCompatActivity {
                 timeselect();
                 t4.setTextColor(Color.parseColor("#ffffff"));
                 t4.setBackground(getDrawable(R.drawable.border2));
+                time=t4.getText().toString();
             }
         });
         t5.setOnClickListener(new View.OnClickListener() {
@@ -91,6 +102,7 @@ public class Registration2 extends AppCompatActivity {
                 timeselect();
                 t5.setTextColor(Color.parseColor("#ffffff"));
                 t5.setBackground(getDrawable(R.drawable.border2));
+                time=t5.getText().toString();
             }
         });
         t6.setOnClickListener(new View.OnClickListener() {
@@ -99,6 +111,7 @@ public class Registration2 extends AppCompatActivity {
                 timeselect();
                 t6.setTextColor(Color.parseColor("#ffffff"));
                 t6.setBackground(getDrawable(R.drawable.border2));
+                time=t6.getText().toString();
             }
         });
         r2next=new Intent(Registration2.this,registration3.class);
@@ -106,6 +119,7 @@ public class Registration2 extends AppCompatActivity {
         r2fw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                r2next.putExtra("time",time);
                 startActivity(r2next);
             }
         });
