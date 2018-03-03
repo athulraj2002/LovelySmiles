@@ -8,10 +8,13 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
-public class Registration1 extends AppCompatActivity {
+public class Registration1 extends AppCompatActivity  {
     public LinearLayout p1,p2,p3,p4,t1,t2,t3,t4;
     public ImageButton bw,fw;
+    TextView pd1,pd2,pd3,pd4;
+    ViewDialogue alert;
     Intent r1int;
     private void packselect(){
         p1.setBackground(getDrawable(R.drawable.border1));
@@ -28,6 +31,40 @@ public class Registration1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration1);
+
+        alert=new ViewDialogue();
+        pd1=findViewById(R.id.pd1);
+        pd2=findViewById(R.id.pd2);
+        pd3=findViewById(R.id.pd3);
+        pd4=findViewById(R.id.pd4);
+
+        pd1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                alert.showDialog(Registration1.this, "Package 1");
+            }
+        });
+
+        pd2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                alert.showDialog(Registration1.this, "Package 2");
+            }
+        });
+
+        pd3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                alert.showDialog(Registration1.this, "Package 3");
+            }
+        });
+
+        pd4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                alert.showDialog(Registration1.this, "Package 4");
+            }
+        });
 
 
         r1int=new Intent(Registration1.this,Registration2.class);

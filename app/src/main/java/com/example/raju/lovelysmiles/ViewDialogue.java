@@ -1,4 +1,4 @@
-
+package com.example.raju.lovelysmiles;
 
 import android.app.Activity;
 import android.app.Dialog;
