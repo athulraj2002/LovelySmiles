@@ -29,6 +29,7 @@ public class Registration1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration1);
 
+
         r1int=new Intent(Registration1.this,Registration2.class);
         bw=(ImageButton)findViewById(R.id.r1finish);
         fw=(ImageButton)findViewById(R.id.r1next);
